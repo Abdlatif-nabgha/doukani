@@ -109,6 +109,33 @@
             transform: translateY(0);
         }
 
+        .download-btn-ios {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px 24px;
+            border-radius: 16px;
+            font-size: 18px;
+            font-weight: 700;
+            transition: all 0.25s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            margin-top: 16px;
+        }
+
+        .download-btn-ios:hover {
+            background: #1c1c1e;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.45);
+        }
+
+        .download-btn-ios:active {
+            transform: translateY(0);
+        }
+
         .instructions {
             margin-top: 32px;
             padding-top: 24px;
@@ -148,36 +175,39 @@
         <h1>تطبيق دكاني (Doukani)</h1>
         <p class="subtitle">نظام إدارة المتاجر والمخزون ونقاط البيع المبتكر</p>
 
-        <!-- Android Notice Badge -->
-        <div class="badge-android">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M6 18c0 .55.45 1 1 1h1v3c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-3h2v3c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-3h1c.55 0 1-.45 1-1V8H6v10zM3.5 8C2.67 8 2 8.67 2 9.5v7c0 .83.67 1.5 1.5 1.5S5 17.33 5 16.5v-7C5 8.67 4.33 8 3.5 8zm17 0c-.83 0-1.5.67-1.5 1.5v7c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-7c0-.83-.67-1.5-1.5-1.5ptM15.53 2.16l1.3-1.3c.2-.2.2-.51 0-.71a.498.498 0 0 0-.7 0l-1.48 1.48C13.85 1.23 12.95 1 12 1c-.96 0-1.86.23-2.66.63L7.86.15c-.2-.2-.51-.2-.71 0-.2.2-.2.51 0 .71l1.31 1.31C6.97 3.26 6 5.01 6 7h12c0-1.99-.97-3.75-2.47-4.84zM10 5H9V4h1v1zm5 0h-1V4h1v1z"/>
-            </svg>
-            يعمل حصرياً على أجهزة أندرويد (Android)
-        </div>
 
         <!-- Download Button -->
-        <a href="https://github.com/Abdlatif-nabgha/doukani/releases/download/v1.0.0/doukani.v2.2.3.apk" class="download-btn">
+        <a href="#" class="download-btn">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 <polyline points="7 10 12 15 17 10"></polyline>
                 <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
-            تحميل التطبيق (APK)
+            تحميل من Google Play
+        </a>
+
+        <!-- iOS Download Button -->
+        <a href="#" class="download-btn-ios">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.19 2.31-.88 3.5-1.15 2.14-.39 3.82.53 4.8 2.05-4.04 2.31-3.26 7.42.92 9.08-1 2.5-2.6 4.93-4.3 6.19zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+            </svg>
+            تحميل من App Store
         </a>
 
         <!-- Instructions -->
         <div class="instructions">
             <h3>طريقة التثبيت:</h3>
             <ol>
-                <li>اضغط على زر التحميل أعلاه.</li>
-                <li>افتح الملف المكتمل من قائمة التنزيلات.</li>
-                <li>وافق على السماح بالتثبيت من "مصادر غير معروفة" عند الطلب.</li>
+                <li>اختر متجر التطبيقات المناسب لجهازك (Google Play أو App Store).</li>
+                <li>سيتم توجيهك مباشرة إلى صفحة التطبيق في المتجر.</li>
+                <li>اضغط على زر "تثبيت" (Install) للبدء.</li>
             </ol>
         </div>
 
         <div class="footer">
-            الإصدار 1.0.0 • جميع الحقوق محفوظة لـ دكاني
+            جميع الحقوق محفوظة لـ دكاني
+            <br><br>
+            <a href="privacy.html" style="color: #64748b; text-decoration: underline; font-size: 13px;">سياسة الخصوصية (Privacy Policy)</a>
         </div>
     </div>
 
