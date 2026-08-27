@@ -83,57 +83,46 @@
             margin-bottom: 28px;
         }
 
-        .download-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            background: #23c6a0;
+        .download-btn,
+        .download-btn-ios {
+            display: block;
+            width: 100%;
+            text-align: center;
             color: #ffffff;
             text-decoration: none;
             padding: 16px 24px;
             border-radius: 16px;
             font-size: 18px;
             font-weight: 700;
-            transition: all 0.25s ease;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+            cursor: pointer;
+        }
+
+        .download-btn svg,
+        .download-btn-ios svg {
+            pointer-events: none;
+        }
+
+        .download-btn {
+            background: #23c6a0;
             box-shadow: 0 8px 20px rgba(35, 198, 160, 0.3);
         }
 
-        .download-btn:hover {
-            background: #1ca385;
-            transform: translateY(-2px);
-            box-shadow: 0 12px 25px rgba(35, 198, 160, 0.45);
-        }
-
-        .download-btn:active {
-            transform: translateY(0);
-        }
-
         .download-btn-ios {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
             background: #000000;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 16px 24px;
-            border-radius: 16px;
-            font-size: 18px;
-            font-weight: 700;
-            transition: all 0.25s ease;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
             margin-top: 16px;
         }
 
-        .download-btn-ios:hover {
-            background: #1c1c1e;
-            transform: translateY(-2px);
-            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.45);
-        }
+        @media (hover: hover) {
+            .download-btn:hover {
+                background: #1ca385;
+            }
 
-        .download-btn-ios:active {
-            transform: translateY(0);
+            .download-btn-ios:hover {
+                background: #1c1c1e;
+            }
         }
 
         .instructions {
@@ -177,13 +166,13 @@
 
 
         <!-- Download Button -->
-        <a href="https://github.com/Abdlatif-nabgha/doukani/releases/download/v1.0.0/doukani.v2.3.1.apk" class="download-btn">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="7 10 12 15 17 10"></polyline>
-                <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
-            تحميل من Google Play
+        <a
+            class="download-btn"
+            href="https://github.com/Abdlatif-nabgha/doukani/releases/download/v1.0.0/doukani.v2.3.1.apk"
+            download="doukani.v2.3.1.apk"
+            type="application/vnd.android.package-archive"
+        >
+            تحميل تطبيق أندرويد (APK)
         </a>
 
         <!-- iOS Download Button -->
