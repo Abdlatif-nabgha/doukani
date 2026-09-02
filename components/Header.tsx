@@ -1,6 +1,5 @@
 "use client";
 
-import { withBase } from "@/lib/basePath";
 import { useLanguage } from "./LanguageProvider";
 
 export function Header() {
@@ -11,7 +10,7 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <a href="#top" className="flex items-center gap-2.5">
           <img
-            src={withBase("/logo.png")}
+            src="/logo.png"
             alt="Doukani"
             width={36}
             height={36}
