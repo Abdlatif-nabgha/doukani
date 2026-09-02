@@ -1,6 +1,7 @@
 "use client";
 
 import { withBase } from "@/lib/basePath";
+import Link from "next/link";
 import { StoreBadges } from "./StoreBadges";
 import { useLanguage } from "./LanguageProvider";
 
@@ -40,12 +41,12 @@ export function Footer() {
             ))}
           </ul>
           <div className="mt-5 flex flex-col gap-2 text-sm">
-            <a href={withBase("/privacy.html")} className="text-zinc-600 hover:text-brand-700">
+            <Link href="/privacy" className="text-zinc-600 hover:text-brand-700">
               {t.privacy}
-            </a>
-            <a href={withBase("/delete-account.html")} className="text-zinc-600 hover:text-brand-700">
+            </Link>
+            <Link href="/delete-account" className="text-zinc-600 hover:text-brand-700">
               {t.deleteAccount}
-            </a>
+            </Link>
           </div>
         </div>
 

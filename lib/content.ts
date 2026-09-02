@@ -45,7 +45,7 @@ export const copy = {
     footerSupport: "الدعم الفني",
     privacy: "سياسة الخصوصية",
     deleteAccount: "حذف الحساب",
-    phones: ["37 48 32 48", "20 59 18 77"],
+    phones: ["37 48 32 48"],
   },
   fr: {
     dir: "ltr" as const,
@@ -97,5 +97,5 @@ export const copy = {
 
 export const STORE_LINKS = {
   play: "https://github.com/Abdlatif-nabgha/doukani/releases/download/v1.0.0/doukani.v2.3.1.apk",
-  apple: "#download",
+  apple: "https://apps.apple.com/us/app/doukani-app/id6806292293",
 };
