@@ -45,7 +45,7 @@ export const copy = {
     footerSupport: "الدعم الفني",
     privacy: "سياسة الخصوصية",
     deleteAccount: "حذف الحساب",
-    phones: ["37 48 32 48"],
+    phones: ["24 48 32 48"],
   },
   fr: {
     dir: "ltr" as const,
