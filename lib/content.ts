@@ -91,7 +91,7 @@ export const copy = {
     footerSupport: "Support",
     privacy: "Politique de confidentialité",
     deleteAccount: "Supprimer le compte",
-    phones: ["37 48 32 48", "20 59 18 77"],
+    phones: ["24 48 32 48"],
   },
 };
 
